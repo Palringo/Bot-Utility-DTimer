@@ -130,5 +130,8 @@
       "mocha": true
     },
     "extends": "eslint:recommended"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.mng.palringo.aws/nexus/content/repositories/NPM/"
   }
 }
