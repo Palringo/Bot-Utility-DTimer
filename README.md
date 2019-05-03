@@ -1,7 +1,7 @@
 # dtimer
 
 [![NPM version](https://badge.fury.io/js/dtimer.svg)](http://badge.fury.io/js/dtimer)
-[![Build Status](https://travis-ci.org/enobufs/dtimer.svg?branch=master)](https://travis-ci.org/enobufs/dtimer) 
+[![Build Status](https://travis-ci.org/enobufs/dtimer.svg?branch=master)](https://travis-ci.org/enobufs/dtimer)
 [![Coverage Status](https://coveralls.io/repos/enobufs/dtimer/badge.png?branch=master)](https://coveralls.io/r/enobufs/dtimer?branch=master)
 
 Distributed timer backed by Redis.
@@ -21,8 +21,7 @@ In a clustered server environment, you'd occasionally need to process a task aft
 * Requires Redis version 2.6.0 or later (dtimer uses lua)
 * The redis module MUST be promisified at module level in advance, even legacy callback style is used.
 ```js
-var Promise = require('bluebird');
-var redis = Promise.promisifyAll(require('redis'));
+var redis = require('redis');
 ```
 
 ## API
@@ -40,7 +39,7 @@ var redis = Promise.promisifyAll(require('redis'));
 > The redis module MUST be promisified before instantiating clients for `pub` and `sub`. See the example below.
 
 ### Instance method
-#### join() - Start listening to events. 
+#### join() - Start listening to events.
 ```
 join([cb]) => {Promise}
     * cb {function} Optional callback.
@@ -186,8 +185,7 @@ The handler will be called with the following argument:
 
 ```js
 var DTimer = require('dtimer').DTimer;
-var Promise = require('bluebird');
-var redis = Promise.promisifyAll(require('redis')); // module level promisification
+var redis = require('redis'); // module level promisification
 var pub = redis.createClient();
 var sub = redis.createClient();
 var dt = new DTimer('ch1', pub, sub)

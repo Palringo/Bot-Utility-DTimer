@@ -1,7 +1,7 @@
 {
-  "name": "dtimer",
+  "name": "bot-util-dtimer",
   "version": "0.3.3",
-  "description": "Distributed timer backed by Redis.",
+  "description": "Serverless timer backed by Redis.",
   "main": "index.js",
   "scripts": {
     "test": "DEBUG=dtimer istanbul cover _mocha",
