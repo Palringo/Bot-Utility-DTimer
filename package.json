@@ -1,6 +1,6 @@
 {
   "name": "bot-util-dtimer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Serverless timer backed by Redis.",
   "main": "index.js",
   "scripts": {
