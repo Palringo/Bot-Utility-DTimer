@@ -16,7 +16,7 @@
     "node": ">=8.9.4"
   },
   "dependencies": {
-    "@palringo/eslint-config": "latest",
+    "@palringo/eslint-config": "^1.5.0",
     "debug": "~2.6.9",
     "lured": "~0.0.2",
     "bluebird": "^3.1.1",
