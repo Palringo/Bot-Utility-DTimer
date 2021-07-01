@@ -24,3 +24,5 @@ node_modules
 # Other temporary files
 *.swp
 *.swo
+
+.npmrc
