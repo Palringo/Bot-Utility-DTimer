@@ -1,6 +1,6 @@
 {
-  "name": "bot-util-dtimer",
-  "version": "1.0.4",
+  "name": "@palringo/bot-dtimer",
+  "version": "0.0.4",
   "description": "Serverless timer backed by Redis.",
   "main": "index.js",
   "scripts": {
@@ -10,29 +10,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/enobufs/dtimer.git"
+    "url": "git://github.com/Palringo/Bot-DTimer.git"
   },
   "engines": {
     "node": ">=8.9.4"
   },
   "dependencies": {
-    "@palringo/eslint-config": "^1.5.0",
-    "debug": "~2.6.9",
-    "lured": "~0.0.2",
-    "bluebird": "^3.1.1",
-    "redis": "~0.12.1",
-    "underscore": "~1.6.0",
-    "uuid": "^2.0.1"
+    "@palringo/logger": "^1.3.2",
+    "bluebird": "^3.7.2",
+    "debug": "~4.3.2",
+    "ioredis": "~4.27.6",
+    "lured": "~1.0.3",
+    "underscore": "~1.13.1",
+    "uuid": "~8.3.2"
   },
   "devDependencies": {
-    "eslint": "4.9.0",
-    "eslint-plugin-classes": "0.1.1",
-    "eslint-plugin-promise": "3.6.0",
-    "async": "1.0.0",
-    "coveralls": "~2.13.3",
-    "istanbul": "~0.3.0",
-    "mocha": "^4.0.1",
-    "sinon": "4.0.1"
+    "@palringo/eslint-config": "^1.6.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-classes": "^0.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "async": "^3.2.0",
+    "coveralls": "^3.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^9.0.1",
+    "sinon": "^11.1.1"
   },
   "keywords": [
     "timer",
@@ -45,9 +46,9 @@
   "author": "enobufs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enobufs/dtimer/issues"
+    "url": "https://github.com/Palringo/Bot-Dtimer/issues"
   },
-  "homepage": "https://github.com/enobufs/dtimer",
+  "homepage": "https://github.com/Palringo/Bot-Dtimer",
   "eslintConfig": {
     "extends": [
       "./node_modules/@palringo/eslint-config/.eslintrc.json"
